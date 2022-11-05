@@ -8,6 +8,9 @@ using MySql.Data.MySqlClient;
 namespace ArbolBinarioDeBusqueda.DBQueries {
     internal class InsertToDB {
 
+        //Ejemplo tomado de:
+        //https://stackoverflow.com/questions/22936361/insert-into-mysql-table-using-c-sharp
+
         public static void SaveKey(int key) {
             MySqlConnection connection = CreateConnection.GetConnection();
             string query = "INSERT INTO tbl_randomNumbers(randomKey) VALUES(@key);";

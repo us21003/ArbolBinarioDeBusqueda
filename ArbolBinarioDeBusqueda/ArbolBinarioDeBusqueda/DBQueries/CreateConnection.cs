@@ -8,6 +8,10 @@ using MySql.Data.MySqlClient;
 namespace ArbolBinarioDeBusqueda.DBQueries {
     internal class CreateConnection {
 
+        //Ejemplo de conexion a base de datos tomado de:
+        //https://dev.mysql.com/doc/connector-net/en/connector-net-connections-string.html
+        //https://stackoverflow.com/questions/15094819/how-to-connect-to-a-remote-mysql-server-using-c
+
         public static MySqlConnection GetConnection() {
             MySqlConnection conn = null;
             string myConnectionString = "SERVER=sql9.freemysqlhosting.net;PORT=3306;DATABASE=sql9541536; UID=sql9541536;PASSWORD=SgNic8Tzul;";

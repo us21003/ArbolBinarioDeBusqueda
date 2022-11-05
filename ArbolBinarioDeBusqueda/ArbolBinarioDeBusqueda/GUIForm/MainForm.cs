@@ -18,6 +18,7 @@ namespace ArbolBinarioDeBusqueda {
 
         private void btnGenerateKey_Click(object sender, EventArgs e) {
             InsertToDB.SaveKey(GetRandomNumnber());
+            MessageBox.Show("Clave generada y guardada correctamente.");
         }
 
         private void btnSearchKey_Click(object sender, EventArgs e) {
@@ -27,6 +28,7 @@ namespace ArbolBinarioDeBusqueda {
                 int keyToSearch = Int32.Parse(txtSearchKey.Text);
                 string result = SearchKeys.PrintOutResult(keyToSearch);
                 MessageBox.Show(result);
+                txtSearchKey.Clear();
             }
         }
 
