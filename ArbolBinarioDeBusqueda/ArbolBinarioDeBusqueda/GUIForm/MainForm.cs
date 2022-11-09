@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace ArbolBinarioDeBusqueda {
     public partial class Form1 : Form {
@@ -18,7 +19,7 @@ namespace ArbolBinarioDeBusqueda {
 
         private void btnGenerateKey_Click(object sender, EventArgs e) {
             InsertToDB.SaveKey(GetRandomNumnber());
-            MessageBox.Show("Clave generada y guardada correctamente.");
+            LoadData.LoadKeys();
         }
 
         private void btnSearchKey_Click(object sender, EventArgs e) {
