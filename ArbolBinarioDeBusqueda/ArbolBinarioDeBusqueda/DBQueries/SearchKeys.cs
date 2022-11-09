@@ -9,20 +9,20 @@ namespace ArbolBinarioDeBusqueda.DBQueries {
 
     internal class SearchKeys {
 
-
+        //Buscar la clave en la tabla:
+        //Ejemplo tomado de: https://learn.microsoft.com/en-us/answers/questions/617901/read-data-values-from-specific-row-in-sql-server-t.html
         static bool SearchKey(int key) {
             MySqlConnection connection = CreateConnection.GetConnection();
-            string myQuery = "SELECT randomKey from tbl_randomNumbers";
-            string collectedKey = "";
+            string myQuery = "SELECT randomKey FROM tbl_randomNumbers WHERE randomKey = @key;";
             bool keyExist = false;
 
             MySqlCommand query = new MySqlCommand(myQuery, connection);
+            query.Parameters.Add(new MySqlParameter("@key", key));
             MySqlDataReader dr = query.ExecuteReader();
 
             while (dr.Read()) {
-                collectedKey = dr.GetString("randomKey");
 
-                if(collectedKey == key.ToString()) {
+                if (key == dr.GetInt32(0)) {
                     keyExist = true;
                 } else {
                     keyExist = false;
@@ -33,7 +33,7 @@ namespace ArbolBinarioDeBusqueda.DBQueries {
 
         public static string PrintOutResult(int keyToSearch) {
 
-            string result = "";
+            string result = string.Empty;
 
             if (SearchKey(keyToSearch)) {
                 result = "La clave existe";
