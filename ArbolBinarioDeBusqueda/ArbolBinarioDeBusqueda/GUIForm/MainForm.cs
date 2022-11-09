@@ -19,6 +19,7 @@ namespace ArbolBinarioDeBusqueda {
 
         private void btnGenerateKey_Click(object sender, EventArgs e) {
             InsertToDB.SaveKey(GetRandomNumnber());
+            MessageBox.Show("Clave generada correctamente");
             LoadData.LoadKeys();
         }
 
