@@ -86,6 +86,7 @@
   <ItemGroup>
     <Compile Include="DBQueries\CreateConnection.cs" />
     <Compile Include="DBQueries\InsertToDB.cs" />
+    <Compile Include="DBQueries\LoadData.cs" />
     <Compile Include="DBQueries\SearchKeys.cs" />
     <Compile Include="GUIForm\MainForm.cs">
       <SubType>Form</SubType>
