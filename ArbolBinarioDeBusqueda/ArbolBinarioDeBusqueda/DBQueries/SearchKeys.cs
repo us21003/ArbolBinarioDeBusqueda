@@ -22,7 +22,7 @@ namespace ArbolBinarioDeBusqueda.DBQueries {
 
             while (dr.Read()) {
 
-                if (key == dr.GetInt32(0)) {
+                if (key == dr.GetInt32("randomKey")) {
                     keyExist = true;
                 } else {
                     keyExist = false;
@@ -41,6 +41,18 @@ namespace ArbolBinarioDeBusqueda.DBQueries {
                 result = "La clave no existe";
             }
             return result;
+        }
+
+        public static bool CheckIfKeyExistInTable(int randomKey) {
+
+            bool keyExist = false;
+
+            if (SearchKey(randomKey))
+                keyExist = true;
+            else
+                keyExist = false;
+
+            return keyExist;
         }
 
     }

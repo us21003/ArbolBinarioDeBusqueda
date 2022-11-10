@@ -18,8 +18,8 @@ namespace ArbolBinarioDeBusqueda {
         }
 
         private void btnGenerateKey_Click(object sender, EventArgs e) {
-            InsertToDB.SaveKey(GetRandomNumnber());
-            MessageBox.Show("Clave generada correctamente");
+
+            GenerateKey();
             LoadData.LoadKeys();
         }
 
@@ -44,8 +44,26 @@ namespace ArbolBinarioDeBusqueda {
 
         private int GetRandomNumnber() {
             Random r = new Random();
-            int randomNumber = r.Next(0, 99);
-            return randomNumber;
+            //int randomNumber = 
+            return r.Next(0, 99);
+        }
+
+        private void GenerateKey() {
+
+            //Generamos un nuevo numero aleatorio:
+            int generatedKey = GetRandomNumnber();
+
+            //Comprobamos si la clave no existe:
+            if (!SearchKeys.CheckIfKeyExistInTable(generatedKey)) {
+
+                //Si no existe, la guardamos:
+                InsertToDB.SaveKey(generatedKey);
+                MessageBox.Show("Clave generada correctamente");
+            } else {
+                //Si no existe, aplicamos recursividad a la funcion:
+                Console.WriteLine("Clave repetida: " + generatedKey.ToString()); //<- imprimir clave generada (acciones de comprobacion).
+                GenerateKey();
+            }
         }
     }
 }
