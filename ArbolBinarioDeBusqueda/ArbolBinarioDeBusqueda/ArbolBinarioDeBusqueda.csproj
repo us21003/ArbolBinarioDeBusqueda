@@ -94,6 +94,8 @@
     <Compile Include="GUIForm\Form1.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logic\ABB.cs" />
+    <Compile Include="Logic\Nodo.cs" />
     <Compile Include="Main\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GUIForm\Form1.resx">

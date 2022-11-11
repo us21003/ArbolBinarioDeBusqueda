@@ -20,7 +20,6 @@ namespace ArbolBinarioDeBusqueda {
         private void btnGenerateKey_Click(object sender, EventArgs e) {
 
             GenerateKey();
-            LoadData.LoadKeys();
         }
 
         private void btnSearchKey_Click(object sender, EventArgs e) {
@@ -64,6 +63,21 @@ namespace ArbolBinarioDeBusqueda {
                 Console.WriteLine("Clave repetida: " + generatedKey.ToString()); //<- imprimir clave generada (acciones de comprobacion).
                 GenerateKey();
             }
+        }
+
+        private void btnShowPreorder_Click(object sender, EventArgs e)
+        {
+            LoadData.LoadKeys(1);
+        }
+
+        private void btnShowInorder_Click(object sender, EventArgs e)
+        {
+            LoadData.LoadKeys(2);
+        }
+
+        private void btnShowPostorder_Click(object sender, EventArgs e)
+        {
+            LoadData.LoadKeys(3);
         }
     }
 }
