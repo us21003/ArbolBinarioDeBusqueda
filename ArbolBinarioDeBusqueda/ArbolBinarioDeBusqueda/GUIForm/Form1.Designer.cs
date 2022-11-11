@@ -57,6 +57,7 @@
             this.btnShowPostorder.TabIndex = 0;
             this.btnShowPostorder.Text = "Postorder";
             this.btnShowPostorder.UseVisualStyleBackColor = true;
+            this.btnShowPostorder.Click += new System.EventHandler(this.btnShowPostorder_Click);
             // 
             // btnShowInorder
             // 
@@ -66,6 +67,7 @@
             this.btnShowInorder.TabIndex = 0;
             this.btnShowInorder.Text = "Inorder";
             this.btnShowInorder.UseVisualStyleBackColor = true;
+            this.btnShowInorder.Click += new System.EventHandler(this.btnShowInorder_Click);
             // 
             // btnShowPreorder
             // 
@@ -75,6 +77,7 @@
             this.btnShowPreorder.TabIndex = 0;
             this.btnShowPreorder.Text = "Preorder";
             this.btnShowPreorder.UseVisualStyleBackColor = true;
+            this.btnShowPreorder.Click += new System.EventHandler(this.btnShowPreorder_Click);
             // 
             // groupBox2
             // 
