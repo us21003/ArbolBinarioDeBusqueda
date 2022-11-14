@@ -98,7 +98,7 @@
     <Compile Include="Logic\Nodo.cs" />
     <Compile Include="Main\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GUIForm\Form1.resx">
+    <EmbeddedResource Include="GUIForm\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
