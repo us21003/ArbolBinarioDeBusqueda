@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Runtime.InteropServices;
 
 namespace ArbolBinarioDeBusqueda {
     public partial class Form1 : Form {
@@ -65,19 +66,38 @@ namespace ArbolBinarioDeBusqueda {
             }
         }
 
-        private void btnShowPreorder_Click(object sender, EventArgs e)
-        {
+        private void btnShowPreorder_Click(object sender, EventArgs e) {
             LoadData.LoadKeys(1);
         }
 
-        private void btnShowInorder_Click(object sender, EventArgs e)
-        {
+        private void btnShowInorder_Click(object sender, EventArgs e) {
             LoadData.LoadKeys(2);
         }
 
-        private void btnShowPostorder_Click(object sender, EventArgs e)
-        {
+        private void btnShowPostorder_Click(object sender, EventArgs e) {
             LoadData.LoadKeys(3);
+        }        
+
+        private void btnExit_Click(object sender, EventArgs e) {
+
+            //Pedir confirmacion para cerrar el programa
+            //Ejemplo tomado de: https://stackoverflow.com/questions/7955244/how-do-i-show-a-messagebox-prompt-when-the-user-has-clicked-the-cross-in-the-tit
+            if (MessageBox.Show("¿Desea cerrar la aplicación?", "Salir", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+                Application.Exit();
+            } else {
+                MessageBox.Show("Cancelado");
+            }            
+        }
+
+        //Agregar evento de arrastre con el mouse al panel
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+        private void panelMainForm_MouseDown(object sender, MouseEventArgs e) {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
     }
 }
