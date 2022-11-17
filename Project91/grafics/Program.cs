@@ -10,6 +10,9 @@ namespace ArbolBinarioDeBusqueda {
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
+        /// 
+        //Ejemplo tomado de:
+        //https://stackoverflow.com/questions/32084424/c-sharp-monogame-passing-arguments-on-startup/32086378#32086378
         [STAThread]
         static void Main() {
             var form = new Form1();
