@@ -64,11 +64,7 @@ namespace grafics {
             List<int> datos = new List<int>();
 
             while (dataReader.Read()) {
-                datos.Add(dataReader.GetInt32(0));
-            }
-
-            foreach (var variable in datos) {
-                arbolAVL.Insertar(variable);
+                arbolAVL.Insertar(dataReader.GetInt32(0));
             }
 
             base.Initialize();
