@@ -15,9 +15,12 @@ namespace ArbolBinarioDeBusqueda {
             var form = new Form1();
 
             if (form.ShowDialog() == DialogResult.OK) {
-                using (var game = new Game1())
+                using var game = new Game1();
                     game.Run();
+                Main();
             }
+            
+            
         }
     }
 }
