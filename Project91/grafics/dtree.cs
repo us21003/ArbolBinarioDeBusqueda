@@ -42,8 +42,8 @@ namespace Project91 {
 
         //Dibuja el árbol
         public void DibujarArbol(GraphicsDeviceManager gra, SpriteBatch sprite, int dato, SpriteFont font, Texture2D[] listaTexturas) {
-            int x = 300;
-            int y = 100;
+            int x = 90;
+            int y = 90;
             if (Root == null) return;
             //Posicion de todos los Nodos.
             Root.PosicionNodo(ref x, y);
