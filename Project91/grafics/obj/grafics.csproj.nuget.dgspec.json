@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexu\\OneDrive\\Documentos\\Coding\\CSharp\\Project91\\grafics\\grafics.csproj": {}
+    "C:\\Users\\ERICK\\Desktop\\Tercero\\ArbolBinarioDeBusqueda\\Project91\\grafics\\grafics.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexu\\OneDrive\\Documentos\\Coding\\CSharp\\Project91\\grafics\\grafics.csproj": {
+    "C:\\Users\\ERICK\\Desktop\\Tercero\\ArbolBinarioDeBusqueda\\Project91\\grafics\\grafics.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexu\\OneDrive\\Documentos\\Coding\\CSharp\\Project91\\grafics\\grafics.csproj",
+        "projectUniqueName": "C:\\Users\\ERICK\\Desktop\\Tercero\\ArbolBinarioDeBusqueda\\Project91\\grafics\\grafics.csproj",
         "projectName": "grafics",
-        "projectPath": "C:\\Users\\alexu\\OneDrive\\Documentos\\Coding\\CSharp\\Project91\\grafics\\grafics.csproj",
-        "packagesPath": "C:\\Users\\alexu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexu\\OneDrive\\Documentos\\Coding\\CSharp\\Project91\\grafics\\obj\\",
+        "projectPath": "C:\\Users\\ERICK\\Desktop\\Tercero\\ArbolBinarioDeBusqueda\\Project91\\grafics\\grafics.csproj",
+        "packagesPath": "C:\\Users\\ERICK\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ERICK\\Desktop\\Tercero\\ArbolBinarioDeBusqueda\\Project91\\grafics\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alexu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ERICK\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
