@@ -333,8 +333,6 @@ C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project9
 C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\bin\Debug\net6.0-windows\runtimes\win7-x86\native\libuv.dll
 C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\grafics.csproj.AssemblyReference.cache
 C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\grafics.csproj.ResolveComReference.cache
-C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\Project91.GUIForm.Form1.resources
-C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\ArbolBinarioDeBusqueda.Form1.resources
 C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\grafics.csproj.GenerateResource.cache
 C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\grafics.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\grafics.AssemblyInfoInputs.cache
@@ -346,3 +344,5 @@ C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project9
 C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\grafics.pdb
 C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\grafics.genruntimeconfig.cache
 C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\ref\grafics.dll
+C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\Project91.GUIForm.MainForm.resources
+C:\Users\alexu\OneDrive\Documentos\Coding\CSharp\ArbolBinarioDeBusqueda\Project91\grafics\obj\Debug\net6.0-windows\Project91.Properties.Resources.resources

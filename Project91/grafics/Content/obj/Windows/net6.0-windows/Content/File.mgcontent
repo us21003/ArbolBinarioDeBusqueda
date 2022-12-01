@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>C:/Users/alexu/OneDrive/Documentos/Coding/CSharp/ArbolBinarioDeBusqueda/Project91/grafics/Content/File.spritefont</SourceFile>
-  <SourceTime>2022-11-16T23:04:10.7134364-06:00</SourceTime>
+  <SourceTime>2022-11-30T22:18:09.447116-06:00</SourceTime>
   <DestFile>C:/Users/alexu/OneDrive/Documentos/Coding/CSharp/ArbolBinarioDeBusqueda/Project91/grafics/Content/bin/Windows/Content/File.xnb</DestFile>
-  <DestTime>2022-11-17T08:48:59.8076015-06:00</DestTime>
+  <DestTime>2022-11-30T23:15:31.8321855-06:00</DestTime>
   <Importer>FontDescriptionImporter</Importer>
   <ImporterTime>2022-07-26T05:44:56-06:00</ImporterTime>
   <Processor>FontDescriptionProcessor</Processor>

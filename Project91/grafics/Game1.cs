@@ -11,7 +11,6 @@ using ButtonState = Microsoft.Xna.Framework.Input.ButtonState;
 using Keys = Microsoft.Xna.Framework.Input.Keys;
 using MessageBox = System.Windows.Forms.MessageBox;
 
-
 namespace grafics {
     public class Game1 : Game {
         private GraphicsDeviceManager _graphics;
@@ -47,21 +46,8 @@ namespace grafics {
 
         protected override void Initialize() {
             // TODO: Add your initialization logic here
-            /*arbolAVL.Insertar(47);
-            cont++;
-            arbolAVL.Insertar(6);
-            cont++;
-            arbolAVL.Insertar(37);
-            cont++;
-            arbolAVL.Insertar(1);
-            cont++;
-            arbolAVL.Insertar(72);
-            cont++;
-            arbolAVL.Insertar(2);
-            cont++;*/
 
             MySqlDataReader dataReader = LoadData.GetValues();
-            List<int> datos = new List<int>();
 
             while (dataReader.Read()) {
                 arbolAVL.Insertar(dataReader.GetInt32(0));

@@ -12,15 +12,13 @@ using MySql.Data.MySqlClient;
 using System.Runtime.InteropServices;
 using grafics;
 
-namespace ArbolBinarioDeBusqueda {
-    public partial class Form1 : Form {
-
-        public Form1() {
+namespace Project91.GUIForm {
+    public partial class MainForm : Form {
+        public MainForm() {
             InitializeComponent();
         }
 
         private void btnGenerateKey_Click(object sender, EventArgs e) {
-
             GenerateKey();
         }
 
@@ -35,11 +33,37 @@ namespace ArbolBinarioDeBusqueda {
             }
         }
 
+        private void btnShowPreorder_Click(object sender, EventArgs e) {
+            LoadData.LoadKeys(1);
+        }
+
+        private void btnShowInorder_Click(object sender, EventArgs e) {
+            LoadData.LoadKeys(2);
+        }
+
+        private void btnShowPostorder_Click(object sender, EventArgs e) {
+            LoadData.LoadKeys(3);
+        }
+
         private void txtSearchKey_KeyPress(object sender, KeyPressEventArgs e) {
             if (char.IsLetter(e.KeyChar)) {
                 e.Handled = true;
                 MessageBox.Show("Solo se permiten numeros");
                 txtSearchKey.Clear();
+            }
+        }
+
+        private void btnDrawTree_Click(object sender, EventArgs e) {
+            DialogResult = DialogResult.OK;
+        }
+
+        private void btnExit_Click(object sender, EventArgs e) {
+            //Pedir confirmacion para cerrar el programa
+            //Ejemplo tomado de: https://stackoverflow.com/questions/7955244/how-do-i-show-a-messagebox-prompt-when-the-user-has-clicked-the-cross-in-the-tit
+            if (MessageBox.Show("¿Desea cerrar la aplicación?", "Salir", MessageBoxButtons.YesNo) == DialogResult.Yes) {
+                Application.Exit();
+            } else {
+                MessageBox.Show("Cancelado");
             }
         }
 
@@ -67,29 +91,6 @@ namespace ArbolBinarioDeBusqueda {
             }
         }
 
-        private void btnShowPreorder_Click(object sender, EventArgs e) {
-            LoadData.LoadKeys(1);
-        }
-
-        private void btnShowInorder_Click(object sender, EventArgs e) {
-            LoadData.LoadKeys(2);
-        }
-
-        private void btnShowPostorder_Click(object sender, EventArgs e) {
-            LoadData.LoadKeys(3);
-        }        
-
-        private void btnExit_Click(object sender, EventArgs e) {
-
-            //Pedir confirmacion para cerrar el programa
-            //Ejemplo tomado de: https://stackoverflow.com/questions/7955244/how-do-i-show-a-messagebox-prompt-when-the-user-has-clicked-the-cross-in-the-tit
-            if (MessageBox.Show("¿Desea cerrar la aplicación?", "Salir", MessageBoxButtons.YesNo) == DialogResult.Yes) {
-                Application.Exit();
-            } else {
-                MessageBox.Show("Cancelado");
-            }            
-        }
-
         //Agregar evento de arrastre con el mouse al panel
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
@@ -100,9 +101,6 @@ namespace ArbolBinarioDeBusqueda {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-        private void btnDrawTree_Click(object sender, EventArgs e) {
-            DialogResult = DialogResult.OK;
-        }
+        
     }
 }
